@@ -46,7 +46,7 @@ public class login_handler : MonoBehaviour
             form.AddField("uid", uid);
             form.AddField("pass", pass);
             form.AddField("mode",mode);
-            UnityWebRequest link = UnityWebRequest.Post("https://crystalpunch-server.herokuapp.com/signuphandler.php", form);
+            UnityWebRequest link = UnityWebRequest.Post("https://bingox.herokuapp.com/signuphandler.php", form);
             StartCoroutine(login_routine(link));
         }
     }
